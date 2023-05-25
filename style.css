@@ -1,0 +1,222 @@
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: blueviolet;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100000;
+}
+
+.header a {
+    padding: 10px;
+    background-color: aliceblue;
+    text-decoration: none;
+    color: black;
+}
+
+.header h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 48px;
+    margin-left: 2em;
+    color: #f1f1f1;
+}
+
+.img-logo img {
+    width: 150px;
+    height: 150px;
+}
+
+.header a:hover {
+    background-color: blueviolet;
+}
+
+.dropdown-li {
+    position: relative;
+    list-style: none;
+    padding: 1.5em 2.5em;
+    border-radius: 10%;
+}
+
+.dropdown-li:hover .dropdown {
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+}
+
+.dropdown {
+    background-color: antiquewhite;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    opacity: 0;
+    display: none;
+    z-index: 10000;
+}
+
+.dropdown li {
+    list-style: none;
+}
+
+.dropdown a {
+    padding: 1em;
+    font-weight: bold;
+}
+
+.img-menu {
+    width: 32px;
+    height: 32px;
+}
+
+.carousel {
+    width: 100%;
+}
+
+#imagen {
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 2rem;
+    height: 30vmax;
+}
+
+.fondo-imagen {
+    background-image: url(img/img4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 2rem;
+    height: 30vmax;
+}
+
+.texto-imagen {
+    background-color: black;
+    opacity: 70%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 3em;
+    position: absolute;
+    color: white;
+    font-family: 'Marck Script', cursive;
+}
+
+#etiqueta{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.wrapper {
+    margin: 10%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+}
+
+.card{
+    background-color:darkgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.card img{
+    margin: auto;
+    width: 50%;
+    height: 75%;
+}
+
+.card h3{
+    margin: auto;
+}
+
+.mision-vision-container{
+    background-color: azure;
+    border-radius: 3%;
+    max-width: 80%;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 4em;
+}
+
+.mision-vision-container h2{
+    text-align: center;
+    font-size: 3em;
+}
+
+.mision-vision-container p{
+    font-size: 2em;
+}
+
+.proyectos{
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.proyecto-container{
+    position: relative;
+    max-width: 100%; 
+    margin: 0 auto; 
+}
+
+.proyecto-container img{
+    margin: 0 auto;
+    display: block;
+}
+
+.proyecto-container .proyecto-texto{
+    position: absolute; 
+    bottom: 0;  
+    background: rgba(0, 0, 0, 0.5); 
+    color: #f1f1f1; 
+    width: 100%;
+    padding: 2em;
+    width: 93%;
+}
+
+
+footer{
+    margin: 2em;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 2rem;
+    background-color: blueviolet;
+}
+
+/*Aqui empiezan los media@querys*/
+@media only screen and (max-width: 600px) {
+    /* Estilos específicos para dispositivos móviles */
+
+    .carousel img{
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .carousel{
+        position: relative;
+    }
+
+    .texto-imagen{
+        font-size: small;
+    }
+
+    .header h1{
+        display: none;
+    }
+   
+}
