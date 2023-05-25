@@ -5,79 +5,106 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-*********" crossorigin="anonymous" />
+
 </head>
 <body>
     <!-- Header -->
-    <header>
-      <nav class="navbar navbar-expand-md fixed-top bg-light">
-        <div class="container">
-          <a href="#" class="navbar-brand">
-            <img src="img/logo.png" height="28" alt="CoolBrand">
-          </a>
-          <a href="#" class="navbar-brand">Null Pointer</a>
-          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Navegar</a>
-                <div class="dropdown-menu">
-                  <a href="aboutus.html" class="dropdown-item">Nosotros</a>
-                  <a href="#" class="dropdown-item">Inicio</a>
-                  <a href="#proyectos" class="dropdown-item">Proyectos</a>
-                </div>
-              </li>
-            </ul>
+    <section>
+      <nav class="navbar navbar-expand-xl fixed-top bg-light shadow-sm">
+          <div class="container py-3">
+              <a href="#" class="navbar-brand">
+                  <img src="img/logo.png" height="28" alt="CoolBrand">
+              </a>
+              <a href="#" class="navbar-brand h1">Null Pointer</a>
+              <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
+                  data-bs-target="#navbarCollapse">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarCollapse">
+                  <div class="navbar-nav ms-auto">
+                      <div class="navbar-nav">
+                          <div class="nav-item dropdown">
+                              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Navegar</a>
+                              <div class="dropdown-menu">
+                                  <a href="nosotros.html" class="dropdown-item">Equipo</a>
+                                  <a href="index.html" class="dropdown-item">Inicio</a>
+                                  <a href="#proyectos" class="dropdown-item">Proyectos</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
           </div>
-        </div>
       </nav>
-    </header>
+  </section>
   
     <!-- Carrusel -->
-    <section>
-        <div class="container mt-5 pt-5">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="img/img4.png" class="d-block w-100" alt="Slide 1">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/img5.png" class="d-block w-100" alt="Slide 2">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/img6.png" class="d-block w-100" alt="Slide 3">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div id="carouselExampleAutoplaying" class="carousel slide" style="margin-top: 70px;" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/img6.png" class="d-block w-100" alt="...">
         </div>
-    </section>
-  
-    <section>
-      <div class="container bg-dark"></div>
-    </section>
-  
+        <div class="carousel-item">
+          <img src="img/img5.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/img4.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    
     <!-- Misión -->
     <section>
-      <div class="container-fluid">
+      <div class="container-fluid text-center">
         <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+          <h2 class="h2-responsive">Sobre nosotros</h2>
+          <p class="p-4 text">
+En NUllPOinter, nos apasiona crear soluciones tecnológicas innovadoras y personalizadas para ayudar a nuestros clientes a alcanzar sus objetivos. Nos enorgullece ser líderes en el campo del desarrollo de software y trabajar con empresas de diversos sectores.
+
+Nuestro equipo de expertos en desarrollo de software está compuesto por profesionales altamente capacitados y apasionados por la tecnología. Utilizamos las últimas herramientas y tecnologías para crear aplicaciones robustas, seguras y escalables que se adaptan a las necesidades específicas de nuestros clientes.
+
+En NUllPOinter, nos enfocamos en comprender a fondo los desafíos y objetivos de nuestros clientes para ofrecer soluciones que impulsen su éxito empresarial. Trabajamos en estrecha colaboración con nuestros clientes en todas las etapas del proceso de desarrollo, desde la conceptualización y el diseño hasta la implementación y el soporte continuo.
+
+Nuestros servicios de desarrollo de software incluyen el desarrollo de aplicaciones web y móviles, la integración de sistemas, la automatización de procesos, la inteligencia artificial y el aprendizaje automático, entre otros. Nos adaptamos a las necesidades cambiantes del mercado y estamos comprometidos con la entrega de proyectos en tiempo y forma.
+
+En [Nombre de la Empresa], la calidad y la satisfacción del cliente son nuestra máxima prioridad. Nos esforzamos por superar las expectativas de nuestros clientes al proporcionar soluciones de software robustas, intuitivas y de alta calidad que impulsen su crecimiento empresarial.
+
+Si está buscando un socio confiable para el desarrollo de software, no busque más. En [Nombre de la Empresa], estamos listos para ayudarle a convertir sus ideas en realidad y llevar su negocio al siguiente nivel.
+
+Contáctenos hoy mismo para obtener más información sobre nuestros servicios y cómo podemos ayudarle a alcanzar el éxito con nuestras soluciones de software a medida.
+
+¡Estamos ansiosos por trabajar con usted!
+
+Equipo de [Nombre de la Empresa]
+          </p>
           <h2 class="h2-responsive">Nuestra misión y visión</h2>
+            <h3 class="h3-responsive">Misión:</h3>
           <p>
-            Misión: Ser la mejor opción moderna, fortaleciendo nuestro liderazgo en la industria de software a nivel internacional, ofreciendo innovación y servicio estelar.
+           Ser la mejor opción moderna, fortaleciendo nuestro liderazgo en la industria de software a nivel internacional, ofreciendo innovación y servicio estelar.
             <br><br>
-            Visión: Iluminar nuestro servicio de software fuera de serie a tu vida con sonrisas y atención inolvidables. Diseñar y desarrollar servicios y soluciones de software diferenciales, que aporten un gran valor ser una empresa atractiva, como proveedor tecnológico y también como lugar de trabajo.
+          </p>
+          <h3 class="h3-responsive">Visión:</h3>
+          <p>Iluminar nuestro servicio de software fuera de serie a tu vida con sonrisas y atención inolvidables. Diseñar y desarrollar servicios y soluciones de software diferenciales, que aporten un gran valor ser una empresa atractiva, como proveedor tecnológico y también como lugar de trabajo.
+            <br><br>
           </p>
         </div>
       </div>
     </section>
   
+    <!--Proyectos-->
     <section>
-      <div class="container-fluid">
+      <div class="container-fluid" id="proyectos">
         <div class="d-flex justify-content-center h-100">
           <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
             <!-- Indicadores -->
@@ -162,6 +189,64 @@
           </div>
         </div>
       </div>
+    </section>
+
+    <section>
+
+      <footer class="bg-light text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a
+              class="btn text-white btn-floating m-1"
+              style="background-color: #3b5998;"
+              href="https;//www.facebok.com/elmer.omero.338218?mibextid=ZbWKwL"
+              role="button"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+      
+            <!-- Twitter -->
+            <a
+              class="btn text-white btn-floating m-1"
+              style="background-color: #55acee;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-twitter"></i
+            ></a>
+      
+            <!-- Instagram -->
+            <a
+              class="btn text-white btn-floating m-1"
+              style="background-color: #ac2bac;"
+              href="https://instagram.com/mario_hdz1711?igshid=MzNlNGNkZWQ4Mg=="
+              role="button"
+              ><i class="fab fa-instagram"></i
+            ></a>
+      
+            
+            
+            <!-- Github -->
+            <a
+              class="btn text-white btn-floating m-1"
+              style="background-color: #333333;"
+              href="https://github.com/mario1711/"
+              role="button"
+              ><i class="fab fa-github"></i
+            ></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2020 Copyright:
+          <a class="text-white" href="https://mdbootstrap.com/">NUllPOinter</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
     </section>
   
   </body>
